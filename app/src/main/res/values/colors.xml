@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Colors -->
+    <color name="blue">#309BA9</color>
+
+    <!-- Secondary Color -->
+    <color name="light_teal_blue">#A3C1C5</color>
+
+    <!-- Ascent Color -->
+    <color name="teal_blue">#0B4249</color>
+
+    <!--Pie chart & bar graph colours-->
+    <color name="green_500">#FF4CAF50</color>
+    <color name="green_700">#046A00</color>
+    <color name="green_800"> #009688</color>
+    <color name="red_500">#FFF44336</color>
+
+
+
+</resources>

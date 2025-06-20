@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_teal_blue"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_transaction"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="@string/title"
+        android:inputType="text"
+        android:layout_marginTop="0dp"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#504949"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp" />
+
+    <!-- Amount -->
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="@string/amount"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#504949"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp" />
+
+    <!-- Income / Expense RadioGroup -->
+    <RadioGroup
+        android:id="@+id/radioGroupType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/income"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:padding="12dp" />
+
+        <RadioButton
+            android:id="@+id/radioExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expense"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:padding="12dp" />
+    </RadioGroup>
+
+    <!-- Category Label -->
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Category Spinner -->
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="@string/select_date"
+        android:focusable="true"
+        android:clickable="true"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#504949"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp" />
+
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSaveTransaction"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/teal_blue"
+        android:text="@string/update_transaction"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>
